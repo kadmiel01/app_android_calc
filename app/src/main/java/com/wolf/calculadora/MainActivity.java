@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         final Button btn9 = (Button) findViewById(R.id.btn_9);
         final Button btnsoma = (Button) findViewById(R.id.btn_soma);
         final Button btnmenos = (Button) findViewById(R.id.btn_menos);
-        final Button btnmultip = (Button) findViewById(R.id.btn_multip;
+        final Button btnmultip = (Button) findViewById(R.id.btn_multip);
         final Button btndivid = (Button) findViewById(R.id.btn_divid);
         final Button btnapagar = (Button) findViewById(R.id.btn_apagar);
         final Button btnponto = (Button) findViewById(R.id.btn_ponto);
@@ -194,6 +194,14 @@ public class MainActivity extends AppCompatActivity {
                 if (displayConta.getText().equals("")){
 
                     Toast.makeText(getApplicationContext(), "Digite um numero", Toast.LENGTH_LONG).show();
+                }
+
+                else {
+                    valor2 = Double.parseDouble(displayConta.getText());
+                    if (operacao.equals("+"))}
+                    double resultado = valor1+valor2;
+                    displayConta.setText("");
+                    displayResultado.setText(resultado.toString()};
                 }
             }
         });
